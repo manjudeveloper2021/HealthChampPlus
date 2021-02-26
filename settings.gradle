@@ -1,7 +1,7 @@
 //include ':example2'
 //include ':sample'
 //include ':mobilertc'
-//include ':commonlib'
+include ':commonlib'
 include ':libraryMobilePaymentATOMSDK'
 //include ':mpsdklibrary-release'
 include ':app'
