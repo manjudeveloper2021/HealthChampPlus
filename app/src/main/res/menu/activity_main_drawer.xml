@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_booking"
+            android:title="My Bookings" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:visible="false"
+            android:icon="@drawable/ic_prescription"
+            android:title="My Prescriptions" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_report"
+            android:title="My Consultation Reports" />
+        <item
+            android:id="@+id/nav_screening"
+            android:icon="@drawable/ic_report"
+            android:visible="false"
+            android:title="My Health Screening Reports" />
+        <item
+            android:id="@+id/nav_vaccine"
+            android:icon="@drawable/ic_schedule"
+            android:visible="false"
+            android:title="Vaccination Schedule" />
+        <item
+            android:id="@+id/nav_msg"
+            android:icon="@drawable/ic_message"
+            android:visible="false"
+            android:title="My Messages" />
+        <item
+            android:id="@+id/nav_tip"
+            android:icon="@drawable/ic_tip"
+            android:title="Health Tips" />
+
+
+    </group>
+</menu>

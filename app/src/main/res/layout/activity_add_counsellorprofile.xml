@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.AddProfile">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout_addprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+        </androidx.legacy.widget.Space>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:text="Create Your Profile"
+            android:textColor="@color/purple_800" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></Space>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="About Yourself">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtabout"
+                        android:textSize="16dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/counsellordob">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtdob"
+                android:textSize="16dp"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp">
+                </androidx.legacy.widget.Space>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="16dp"
+                        android:textColor="#70000000"></TextView>
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rbtmale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"></RadioButton>
+                        <RadioButton
+                            android:id="@+id/rbtfemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"></RadioButton>
+                    </RadioGroup>
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></Space>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/country">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtcountry"
+                android:textSize="16dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="5dp"></Space>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/state">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></Space>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="@string/city">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtcity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></Space>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="@string/pincode">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtpincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+        </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/btnskip"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/grey_button"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Skip"
+                    android:textColor="#fff" />
+            </LinearLayout>
+            <androidx.legacy.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content">
+            </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:id="@+id/btnnext"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/roundedcounsellor_button"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Next"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+            </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_addeducation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+        </androidx.legacy.widget.Space>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:text="Add Your Education"
+            android:textColor="@color/purple_800" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/counsellorqualification">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtqualification"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/counsellorspecialization">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtspecialization"
+                    android:textSize="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/counsellortype">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edttype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+            </androidx.legacy.widget.Space>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/btnskip1"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/grey_button"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Skip"
+                        android:textColor="#fff" />
+                </LinearLayout>
+                <androidx.legacy.widget.Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content">
+                </androidx.legacy.widget.Space>
+                <LinearLayout
+                    android:id="@+id/btnnext1"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/roundedcounsellor_button"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Next"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_addwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </androidx.legacy.widget.Space>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"
+                android:text="Add Your Work Experience"
+                android:textColor="@color/purple_800" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/experience">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtexperience"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </androidx.legacy.widget.Space>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/btnskip2"
+                        android:layout_width="150dp"
+                        android:layout_height="45dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/grey_button"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:text="Skip"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+                    <androidx.legacy.widget.Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content">
+                    </androidx.legacy.widget.Space>
+                    <LinearLayout
+                        android:id="@+id/btnnext2"
+                        android:layout_width="150dp"
+                        android:layout_height="45dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/roundedcounsellor_button"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:text="Submit"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

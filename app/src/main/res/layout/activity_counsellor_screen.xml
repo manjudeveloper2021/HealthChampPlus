@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activity.CounsellorScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/newhealthlogo"
+                    app:tint="#C4000000"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome To HealthChamp App"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="22sp"
+                    android:textColor="#D2000000"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#9A000000"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/counsellorname"
+                    android:textColorHint="#7A000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_counsellorfullname"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></Space>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/counsellormail"
+                    android:textColorHint="#7A000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_counsellormail"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></Space>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/counsellormobile"
+                    android:textColorHint="#7A000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_counsellormobile"
+                        android:textSize="16dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></Space>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/counsellorpassword"
+                    android:textColorHint="#7A000000"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_counsellorpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textSize="16dp"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/btnsignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/roundedcounsellor_button"
+                    android:elevation="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Sign up"
+                        android:textColor="#fff" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"></Space>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account"
+
+                        android:textSize="16sp"
+                        android:textColor="#9A000000"></TextView>
+                    <TextView
+                        android:id="@+id/txtsignin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign in"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/purple_800"></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

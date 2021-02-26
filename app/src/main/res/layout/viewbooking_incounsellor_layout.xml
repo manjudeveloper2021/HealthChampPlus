@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+
+            app:tint="#000"></ImageView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Bookings"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="#000"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"></androidx.recyclerview.widget.RecyclerView>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01 February 2021"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#000"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Counselling Mode : Video"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:textColor="#000"></TextView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FAE8E0F8"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Slot"
+                android:textColor="#000"
+                android:textSize="16sp"></TextView>
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
+            </androidx.legacy.widget.Space>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9 - 10 AM"
+                    android:background="@color/grey"
+                    android:padding="8dp"
+                    android:textColor="#fff"
+                    android:textSize="14sp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02 February 2021"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="#000"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counselling Mode : Video"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:textColor="#000"></TextView>
+    </LinearLayout>
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#FAE8E0F8"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Slot"
+            android:textColor="#000"
+            android:textSize="16sp"></TextView>
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp">
+        </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:30 - 03:30 PM"
+                android:background="@color/grey"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11 February 2021"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="#000"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counselling Mode : Video"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:textColor="#000"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FAE8E0F8"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Slot"
+                android:textColor="#000"
+                android:textSize="16sp"></TextView>
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
+            </androidx.legacy.widget.Space>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:11 - 11:00 AM"
+                    android:background="@color/purple_800"
+                    android:padding="8dp"
+                    android:textColor="#fff"
+                    android:textSize="14sp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02:30 - 03:30 PM"
+                    android:background="@color/purple_800"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="14sp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+      </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

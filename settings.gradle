@@ -1,0 +1,8 @@
+//include ':example2'
+//include ':sample'
+//include ':mobilertc'
+//include ':commonlib'
+include ':libraryMobilePaymentATOMSDK'
+//include ':mpsdklibrary-release'
+include ':app'
+rootProject.name = "HealthChampPlus"

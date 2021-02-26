@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_alignParentLeft="true"
+            android:text="Child Name : "></TextView>
+        <androidx.legacy.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+
+        <TextView
+            android:id="@+id/txtpchildname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textColor="#000"></TextView>
+        <TextView
+            android:id="@+id/txtid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_alignParentLeft="true"
+            android:text="Child DOB : "></TextView>
+        <androidx.legacy.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+
+        <TextView
+            android:id="@+id/txtchilddob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textColor="#000"></TextView>
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

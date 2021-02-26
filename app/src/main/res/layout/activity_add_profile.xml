@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#12000000"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.AddProfile">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/layout_showreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+        </androidx.legacy.widget.Space>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:text="Create Your Child's Profile"
+            android:textColor="#1E88E5" />
+<androidx.legacy.widget.Space
+    android:layout_width="wrap_content"
+    android:layout_height="15dp">
+</androidx.legacy.widget.Space>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtname"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp">
+                </androidx.legacy.widget.Space>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="16dp"
+                        android:textColor="#70000000"></TextView>
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rbtmale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"></RadioButton>
+                        <RadioButton
+                            android:id="@+id/rbtfemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"></RadioButton>
+                        <RadioButton
+                            android:id="@+id/rbtother"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Other"></RadioButton>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="DOB">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtdob"
+                android:textSize="16dp"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="School Name">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtschoolname"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your City Pin Code">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtpincode"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:maxLength="6"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your City">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtcity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp">
+                </androidx.legacy.widget.Space>
+                <LinearLayout
+                    android:id="@+id/layout_additional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:textSize="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Gender">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtmobile"
+                            android:textSize="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="DOB">
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:textSize="16dp"
+                            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="School Name">
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:textSize="16dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Your City Pin Code">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="15dp">
+        </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/btnskip"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/grey_button"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Skip"
+                    android:textColor="#fff" />
+            </LinearLayout>
+            <androidx.legacy.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content">
+            </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:id="@+id/btnsignup"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/signup_button"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Submit"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+                <TextView
+                    android:id="@+id/txtdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add more +"
+                 android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:layout_gravity="right"
+                    android:textColor="#0B7E8C"></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

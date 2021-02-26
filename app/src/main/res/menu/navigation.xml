@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_message"
+        android:enabled="true"
+        android:title="Message" />
+
+    <item
+        android:id="@+id/nav_gallery"
+        android:enabled="true"
+        android:title="Gallery" />
+
+    <item
+        android:id="@+id/nav_support"
+        android:enabled="true"
+        android:title="Blog/Article" />
+    <item
+        android:id="@+id/nav_event"
+        android:enabled="true"
+
+        android:title="Event" />
+</menu>

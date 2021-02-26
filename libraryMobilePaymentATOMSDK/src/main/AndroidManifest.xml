@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.atom.library_mobilepaymentsdk"
+    android:versionCode="3"
+    android:versionName="3.3" >
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/process"
+        android:label="atom payment SDK"
+        android:theme="@android:style/Theme.Holo.Light"
+        tools:ignore="NewApi">
+    </application>
+
+</manifest>

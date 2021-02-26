@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        card_view:cardCornerRadius="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imgview"
+                    android:layout_width="220dp"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/event_image"></ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#16000000"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parents"
+                        android:textStyle="bold"
+                        android:textColor="#1E88E5"
+                        android:textSize="18sp"></TextView>
+                    <androidx.legacy.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp">
+                    </androidx.legacy.widget.Space>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="4:00 PM-5:30 PM"
+                        android:textSize="14sp"></TextView>
+                    <androidx.legacy.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp">
+                    </androidx.legacy.widget.Space>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_button"
+                            android:text="Join Us"
+                            android:textColor="#fff"
+                            android:textSize="14sp"></Button>
+                    <androidx.legacy.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="9dp"></androidx.legacy.widget.Space>
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:textColor="#fff"
+                        android:text="Read More"
+                        android:background="@drawable/signup_button"
+                        android:textSize="14sp"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

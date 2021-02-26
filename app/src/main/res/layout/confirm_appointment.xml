@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+ android:background="#fff"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+  android:layout_marginTop="50dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:gravity="center"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+       android:layout_marginRight="40dp"
+        android:src="@drawable/talktoexpert"></ImageView>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+      android:layout_marginBottom="30dp"
+        android:layout_marginLeft="-120dp"
+        android:src="@drawable/confirm_icon"
+        android:contentDescription="TODO"></ImageView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#BA000000"
+        android:textSize="20sp"
+        android:text="Your Counselling Booked Successfully"></TextView>
+    <TextView
+        android:id="@+id/txtsession"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="#A6000000"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"></TextView>
+    <TextView
+        android:id="@+id/txtcouncildate"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_800"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:drawableTint="@color/purple_800"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:textSize="22sp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="#9F000000"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="An email has been sent to your registered Email-ID."></TextView>
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedcounsellor_button"
+        android:text="View Your Schedule"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+      android:layout_marginTop="30dp"
+        android:textStyle="bold"></Button>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

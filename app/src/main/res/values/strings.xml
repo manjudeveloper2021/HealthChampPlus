@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">HealthChampPlus</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tip">Health Tips</string>
+
+    <string name="counsellorname">Full Name<font color='#FF0000'> *</font></string>
+    <string name="counsellormail">Email<font color='#FF0000'> *</font></string>
+    <string name="counsellormobile">Mobile (10 digits)<font color='#FF0000'> *</font></string>
+    <string name="counsellorpassword">Set Password<font color='#FF0000'> *</font></string>
+    <string name="counsellordob">DOB<font color='#FF0000'> *</font></string>
+    <string name="counsellorqualification">Qualification<font color='#FF0000'> *</font></string>
+    <string name="counsellorspecialization">Specialization<font color='#FF0000'> *</font></string>
+    <string name="counsellortype">What type of counselor are you ?<font color='#FF0000'> *</font></string>
+    <string name="country">Country<font color='#FF0000'> *</font></string>
+    <string name="state">State<font color='#FF0000'> *</font></string>
+    <string name="city">City<font color='#FF0000'> *</font></string>
+    <string name="pincode">Pincode<font color='#FF0000'> *</font></string>
+    <string name="experience">Work Experience<font color='#FF0000'> *</font></string>
+
+
+
+
+</resources>

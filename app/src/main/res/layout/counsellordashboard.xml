@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtlogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LogOut"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:textColor="@color/purple_800"></TextView>
+            <LinearLayout
+                android:id="@+id/layoutimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="8dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/docmale"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#5B000000"/>
+
+                <TextView
+                    android:id="@+id/txtname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demo Counsellor"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="#000"></TextView>
+
+                <TextView
+                    android:id="@+id/txtqualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="PHYSCIAN"
+                    android:textColor="#80000000"
+                    android:textSize="16sp"></TextView>
+                <TextView
+                    android:id="@+id/txtid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+
+                    ></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile :"
+                            android:textColor="#000"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/txtmobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="7042069884"
+                            android:textColor="#A1000000"
+                            android:textSize="16sp"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email :"
+                            android:textColor="#000"
+                            android:textSize="16sp"></TextView>
+                        <TextView
+                            android:id="@+id/txtmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="BHANU.SINGH@LITCHI.CO.IN"
+                            android:textColor="#A1000000"
+                            android:gravity="right"
+                            android:textSize="16sp"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Located at :"
+                            android:textColor="#000"
+                            android:textSize="16sp"></TextView>
+                        <TextView
+                            android:id="@+id/txtaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="India"
+                            android:textColor="#A1000000"
+                            android:gravity="right"
+                            android:textSize="16sp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#1B000000"></View>
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
+            </androidx.legacy.widget.Space>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:elevation="2dp"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summary"
+                    android:textColor="@color/purple_800"
+                    android:textSize="18sp"></TextView>
+                <TextView
+                    android:id="@+id/txtabout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="NA"
+                    android:textColor="#90000000"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
+            </androidx.legacy.widget.Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.andoid.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardElevation="3dp"
+                    card_view:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:id="@+id/layout_set"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:background="@color/purple_800"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Set Availability"
+                            android:textColor="#fff"
+                            android:textSize="14sp"></TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"></Space>
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardElevation="3dp"
+                    card_view:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:id="@+id/layout_booking"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View Bookings"
+                            android:textColor="#673AB7"
+                            android:textSize="14sp"></TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"></Space>
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.andoid.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardElevation="3dp"
+                    card_view:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:id="@+id/layout_view"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:background="@color/purple_800"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View Slots"
+                            android:textColor="#fff"
+                            android:textSize="14sp"></TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

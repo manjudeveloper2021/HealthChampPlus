@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_showreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+        </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+            android:layout_gravity="left"
+            android:text="CREATE YOUR ACCOUNT"
+            android:textColor="#000" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="15dp">
+        </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profileuser_icon"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#34000000"/>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="-30dp"
+                android:background="@drawable/back_button">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@android:drawable/ic_menu_edit"
+                    app:tint="#fff"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp">
+        </androidx.legacy.widget.Space>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#7A000000"
+            android:hint="Parent's Full Name *">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtname"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWSYZabcdefghijklmnopqrstuvwxyz "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp">
+        </androidx.legacy.widget.Space>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#7A000000"
+            android:hint="Mobile *">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtmobile"
+                android:textSize="16dp"
+                android:inputType="number"
+                android:textColor="#000"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp">
+        </androidx.legacy.widget.Space>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#7A000000"
+            android:hint="Email-ID *">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtmail"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp">
+        </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="16dp"
+                android:textColor="#70000000"></TextView>
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+              <RadioButton
+                  android:id="@+id/rbtmale"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Male"></RadioButton>
+                <RadioButton
+                    android:id="@+id/rbtfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"></RadioButton>
+                <RadioButton
+                    android:id="@+id/rbtother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"></RadioButton>
+            </RadioGroup>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Password *"
+            android:textColorHint="#7A000000"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="16dp"
+                android:textColor="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+        </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:id="@+id/btnsignup"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/grey_button"
+            android:elevation="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="NEXT STEP"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp">
+        </androidx.legacy.widget.Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Already have an account ? "
+            android:textColor="#AD000000" />
+            <TextView
+                android:id="@+id/txtlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Login"
+                android:textColor="#00ACC1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:layout_height="60dp"
+            android:background="@drawable/back_button">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            app:tint="#fff"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

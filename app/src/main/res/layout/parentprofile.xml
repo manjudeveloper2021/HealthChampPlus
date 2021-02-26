@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/purple_800"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:padding="12dp"
+
+                android:src="@drawable/hcplusicon"
+                app:civ_border_width="0.9dp"
+                app:civ_border_color="#485E35B1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutimg"
+            android:orientation="vertical">
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="3dp"
+                android:layout_centerHorizontal="true"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/layoutname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    >
+
+
+
+
+                    <TextView
+                        android:id="@+id/txtname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="2dp"
+                        android:text="test"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="60dp"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtdesignation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtname"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/layoutname"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Gender"
+                            android:textColor="#000" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:id="@+id/txtspecify"
+                            android:textColor="#1E88E5"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Child Class"
+                            android:textColor="#000" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5th"
+                            android:id="@+id/txtexperience"
+                            android:textColor="#1E88E5"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Child Section"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:id="@+id/txtqualification"
+                            android:textColor="#1E88E5"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/layout_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear1"
+                    android:layout_marginTop="-12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:background="#74FFFFFF"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:layout_alignParentLeft="true"
+                                android:text="Contact : "></TextView>
+                            <androidx.legacy.widget.Space
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:text="9999999999"
+
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/txtmobile"></TextView>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:layout_alignParentLeft="true"
+                                android:text="Email : "></TextView>
+                            <androidx.legacy.widget.Space
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+
+                                android:text="test@gmail.com"
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/txtemail"></TextView>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:layout_alignParentLeft="true"
+                                android:text="Name : "></TextView>
+                            <androidx.legacy.widget.Space
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/txtchildname"></TextView>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:layout_alignParentLeft="true"
+                                android:text="Age : "></TextView>
+                            <androidx.legacy.widget.Space
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/txtchildage"></TextView>
+                        </RelativeLayout>
+                        <androidx.legacy.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"></androidx.legacy.widget.Space>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/txtaddchild"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#1E88E5"
+                                    android:textSize="14sp"
+                                    android:layout_gravity="left"
+                                    android:text="Add Child Details"></TextView>
+                                <TextView
+                                    android:id="@+id/txtviewprofile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#1E88E5"
+                                    android:textSize="14sp"
+                                    android:gravity="right"
+                                    android:layout_gravity="right"
+                                    android:text="View Profile"></TextView>
+
+                            </LinearLayout>
+                            <androidx.legacy.widget.Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp"></androidx.legacy.widget.Space>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#7E1E88E5"></View>
+                            <androidx.legacy.widget.Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp"></androidx.legacy.widget.Space>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtabout"></TextView>
+                        </LinearLayout>
+                        <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                        <LinearLayout
+                            android:id="@+id/layout_addchild"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Name">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtname"
+                                    android:textSize="16dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <androidx.legacy.widget.Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp">
+                            </androidx.legacy.widget.Space>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gender"
+                                    android:textSize="16dp"
+                                    android:textColor="#70000000"></TextView>
+                                <RadioGroup
+                                    android:id="@+id/radiogroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:orientation="horizontal">
+                                    <RadioButton
+                                        android:id="@+id/rbtmale"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Male"></RadioButton>
+                                    <RadioButton
+                                        android:id="@+id/rbtfemale"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Female"></RadioButton>
+                                    <RadioButton
+                                        android:id="@+id/rbtother"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Other"></RadioButton>
+                                </RadioGroup>
+
+                            </LinearLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:hint="DOB">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtdob"
+                                    android:textSize="16dp"
+                                    android:focusable="false"
+                                    android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:hint="School Name">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtschoolname"
+                                    android:textSize="16dp"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:hint="Your City Pin Code">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtpincode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:maxLength="6"
+                                    android:textSize="16dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:hint="Your City">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtcity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/txtdetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add more +"
+                                android:visibility="gone"
+                                android:textSize="16sp"
+                                android:layout_gravity="right"
+                                android:textColor="#0B7E8C"></TextView>
+
+                            <androidx.legacy.widget.Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="10dp">
+                            </androidx.legacy.widget.Space>
+                            <LinearLayout
+                                android:id="@+id/layout_additional"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Name">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:textSize="16dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Gender">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtmobile"
+                                        android:textSize="16dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:hint="DOB">
+                                    <com.google.android.material.textfield.TextInputEditText
+
+                                        android:textSize="16dp"
+                                        android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:hint="School Name">
+                                    <com.google.android.material.textfield.TextInputEditText
+
+                                        android:textSize="16dp"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:hint="Your City Pin Code">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtmail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="16dp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:id="@+id/btnskip"
+                                    android:layout_width="150dp"
+                                    android:layout_height="45dp"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:background="@drawable/grey_button"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="20sp"
+                                        android:text="Skip"
+                                        android:textColor="#fff" />
+                                </LinearLayout>
+                                <androidx.legacy.widget.Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content">
+                                </androidx.legacy.widget.Space>
+                                <LinearLayout
+                                    android:id="@+id/btnsignup"
+                                    android:layout_width="150dp"
+                                    android:layout_height="45dp"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:background="@drawable/signup_button"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="20sp"
+                                        android:text="Submit"
+                                        android:textColor="#fff" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        </ScrollView>
+                        <LinearLayout
+                            android:id="@+id/layout_fullprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                      <androidx.recyclerview.widget.RecyclerView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/recyclerview_child"></androidx.recyclerview.widget.RecyclerView>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                               android:visibility="gone"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="Child Date of Birth : "></TextView>
+                                <androidx.legacy.widget.Space
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+
+                                <TextView
+                                    android:id="@+id/txtchilddob"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="0dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#000"></TextView>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="School : "></TextView>
+                                <androidx.legacy.widget.Space
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+
+                                <TextView
+                                    android:id="@+id/txtchildschool"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="0dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#000"></TextView>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                             android:visibility="gone"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="Address : "></TextView>
+                                <androidx.legacy.widget.Space
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"></androidx.legacy.widget.Space>
+
+                                <TextView
+                                    android:id="@+id/txtaddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="0dp"
+
+                                    android:textStyle="bold"
+                                    android:textColor="#000"></TextView>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <androidx.legacy.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp"></androidx.legacy.widget.Space>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="-25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="220dp"
+                android:text="Add Child Details"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:background="@drawable/grey_button"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_height="40dp"></Button>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:layout_below="@+id/layout2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:elevation="3dp"
+                android:background="@drawable/borderlesscard"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Update Schedule"
+                    android:textSize="14sp"
+                    android:textColor="#fff"
+                    android:elevation="3dp"
+                    android:layout_gravity="right"
+                    android:textAllCaps="false"
+                    android:padding="6dp"
+                    android:background="@drawable/rounded_button"></Button>
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></androidx.legacy.widget.Space>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:00 A.M, 10 September 2020"
+                    android:textSize="16dp"
+                    android:textColor="#000"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule for : Emotional Health"
+                    android:textSize="16dp"
+                    android:textColor="#A1000000"></TextView>
+            </LinearLayout>
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"></androidx.legacy.widget.Space>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:elevation="3dp"
+                android:background="@drawable/borderlesscard"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Missed Schedule"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:padding="6dp"
+                    android:layout_gravity="right"
+                    android:elevation="3dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/rounded_button"></Button>
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"></androidx.legacy.widget.Space>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:25 A.M, 22 August 2020"
+                    android:textSize="16dp"
+                    android:textColor="#000"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule for : Nutrition Health"
+                    android:textSize="16dp"
+                    android:textColor="#A1000000"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameprofile"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/layout2">
+        </FrameLayout>
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
